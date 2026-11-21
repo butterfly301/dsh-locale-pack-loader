@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: '@fairyonthetree/pirate-locale',
+  id: 'dsh-locale-pack-loader',
   factory() {
     function registerPack(locale, pack) {
       const disposers = [];

@@ -1,12 +1,12 @@
 {
-  "name": "@fairyonthetree/pirate-locale",
+  "name": "dsh-locale-pack-loader",
   "version": "0.1.0",
   "type": "module",
   "description": "Registers languages and dictionaries declared by DSH bundle configuration.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/butterfly301/pirate-locale.git"
+    "url": "git+https://github.com/butterfly301/dsh-locale-pack-loader.git"
   },
   "engines": {
     "dsh": ">=0.2.2-rc.5 <0.3.0"

@@ -1,6 +1,6 @@
 # 语言包加载器
 
-启用 `@fairyonthetree/pirate-locale` 后，主题整合包可以通过补丁给 `locale-pack-loader` 提供一份语言包，并给 DSH 的 `locale` 行设置语言偏好。
+启用 `dsh-locale-pack-loader` 后，主题整合包可以通过补丁给 `locale-pack-loader` 提供一份语言包，并给 DSH 的 `locale` 行设置语言偏好。
 
 ```yaml
 - id: locale-pack-loader
