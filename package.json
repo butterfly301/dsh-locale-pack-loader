@@ -1,12 +1,26 @@
 {
   "name": "dsh-locale-pack-loader",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "Registers languages and namespace dictionaries declared in configuration. Any number of language ids are supported.",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/butterfly301/dsh-locale-pack-loader.git"
+  },
+  "homepage": "https://github.com/butterfly301/dsh-locale-pack-loader#readme",
+  "bugs": {
+    "url": "https://github.com/butterfly301/dsh-locale-pack-loader/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "locale",
+    "i18n"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "dsh": ">=0.2.2-rc.5 <0.3.0"

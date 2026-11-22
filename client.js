@@ -73,13 +73,12 @@ window.__ModuleLoader__.load({
 
     function registerPacks(locale, packs) {
       const releases = [];
-      try {
-        for (const pack of packs) releases.push(registerPack(locale, pack));
-      } catch (error) {
-        for (const release of releases.splice(0).reverse()) {
-          try { release(); } catch {}
+      for (const pack of packs) {
+        try {
+          releases.push(registerPack(locale, pack));
+        } catch (error) {
+          console.warn(`[locale-pack-loader] Skipping language pack "${pack?.id ?? ''}":`, error);
         }
-        throw error;
       }
       return () => {
         let failure;
