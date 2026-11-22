@@ -16,7 +16,13 @@ const pack = z.object({
   dictionaries: z.dict(z.dict(z.string())).required(),
 });
 
-export const Config = z.object({ pack: z.union([z.const(false), pack]).default(false).volatile() });
+// `packs` registers any number of language variants from one row; language ids
+// come entirely from configuration. `pack` is a backwards-compatible single
+// alias; the client merges both into one list.
+export const Config = z.object({
+  pack: z.union([z.const(false), pack]).default(false).volatile(),
+  packs: z.array(pack).default([]).volatile(),
+});
 
 export function apply(ctx) {
   ctx.inject(['settings'], scope => scope.effect(

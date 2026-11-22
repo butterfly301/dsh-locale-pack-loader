@@ -1,8 +1,8 @@
 {
   "name": "dsh-locale-pack-loader",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "type": "module",
-  "description": "Registers languages and dictionaries declared by DSH bundle configuration.",
+  "description": "Registers languages and namespace dictionaries declared in configuration. Any number of language ids are supported.",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -1,1 +1,1 @@
-{"meta":{"title":"Locale pack loader","description":"Registers language and namespace dictionaries supplied by DSH bundle configuration."}}
+{"meta":{"title":"Locale pack loader","description":"Registers languages and namespace dictionaries from configuration. Language ids and content come entirely from config; the plugin ships no language definitions."}}
