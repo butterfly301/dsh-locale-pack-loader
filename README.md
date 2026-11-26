@@ -2,6 +2,8 @@
 
 一个通用的 DSH web 客户端插件，按配置注册若干语言及其命名空间词典。语言 ID、名称、回退语言和词典内容全部来自配置，插件本身不含任何语言定义。选用哪种语言由 DSH 的 `locale` 设置行决定，不属于加载器的职责。
 
+此包是 [`dsh-pirate-mode`](https://github.com/butterfly301/dsh-pirate-mode) 的组件，也可以单独安装使用。
+
 ## 配置
 
 通过补丁给 `locale-pack-loader` 提供一个或多个语言包。`packs` 是数组，每一项注册一种语言；`pack` 是单语言写法，保留兼容。两者会合并，按 ID 去重。
