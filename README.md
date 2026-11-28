@@ -4,6 +4,14 @@
 
 此包是 [`dsh-pirate-mode`](https://github.com/butterfly301/dsh-pirate-mode) 的组件，也可以单独安装使用。
 
+## 独立安装
+
+```bash
+dsh plugin --profile desktop add dsh-locale-pack-loader
+```
+
+默认没有语言包，装完不注册任何语言；按下方片段提供 `packs` 后生效。
+
 ## 配置
 
 通过补丁给 `locale-pack-loader` 提供一个或多个语言包。`packs` 是数组，每一项注册一种语言；`pack` 是单语言写法，保留兼容。两者会合并，按 ID 去重。

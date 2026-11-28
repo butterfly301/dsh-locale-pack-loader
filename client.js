@@ -23,8 +23,6 @@ window.__ModuleLoader__.load({
       return release;
     }
 
-    // Merge the legacy single `pack` alias and the new `packs` list into one
-    // ordered, de-duplicated set. Later entries win on id collision.
     function collectPacks(value) {
       const list = [];
       if (value?.pack && typeof value.pack === 'object') list.push(value.pack);

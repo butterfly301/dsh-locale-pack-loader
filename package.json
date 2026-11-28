@@ -1,6 +1,6 @@
 {
   "name": "dsh-locale-pack-loader",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "type": "module",
   "description": "Registers languages and namespace dictionaries declared in configuration. Any number of language ids are supported.",
   "license": "MIT",
@@ -33,6 +33,7 @@
     "./package.json": "./package.json"
   },
   "files": [
+    "cordis.patch.yml",
     "index.js",
     "client.js",
     "locale",
@@ -48,6 +49,9 @@
         "@deepseek-ai/dsh-client-locale",
         "@deepseek-ai/dsh-client-ui-settings"
       ]
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
     }
   }
 }

@@ -1,0 +1,3 @@
+- insert:
+    - id: locale-pack-loader
+      name: 'dsh-locale-pack-loader'
